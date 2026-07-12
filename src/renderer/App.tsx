@@ -20,7 +20,7 @@ export default function App() {
   const [toastMessage, setToastMessage] = useState<string | null>(null);
   const [settingsOpen, setSettingsOpen] = useState(false);
   const [autoTypeEnabled, setAutoTypeEnabled] = useState(
-    () => localStorage.getItem(AUTO_TYPE_PREF_KEY) === 'true',
+    () => localStorage.getItem(AUTO_TYPE_PREF_KEY) !== 'false',
   );
   const [pendingAutoType, setPendingAutoType] = useState<PendingAutoType | null>(null);
   const toastTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
