@@ -12,8 +12,8 @@ Claude Code has no API for a separate desktop app to reach into a running termin
 
 Two ways to get that command into your terminal:
 
-- **Clipboard mode** (default) — shifting copies `/model <id>` to your clipboard. Paste it into Claude Code yourself.
-- **Auto-type mode** (experimental, opt-in) — shifting shows you the OS window it's about to type into and asks you to confirm, then types the command and presses Enter for you. Window detection on Windows is best-effort (the OS restricts which apps can query real focus state), so the confirmation step exists specifically to catch a wrong guess before anything gets typed into the wrong place.
+- **Auto-type mode** (experimental, enabled by default) — shifting shows you the OS window it's about to type into and asks you to confirm, then types the command and presses Enter for you. Window detection on Windows is best-effort (the OS restricts which apps can query real focus state), so the confirmation step exists specifically to catch a wrong guess before anything gets typed into the wrong place.
+- **Clipboard mode** — toggle auto-type off in the app to switch to this instead: shifting copies `/model <id>` to your clipboard, and you paste it into Claude Code yourself.
 
 ## Gear mapping
 
